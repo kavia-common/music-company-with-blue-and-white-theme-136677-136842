@@ -1,0 +1,46 @@
+:root {
+  --brand-blue: #0B5ED7;
+  --brand-blue-600: #0a58ca;
+  --brand-blue-100: #e7f1ff;
+  --brand-dark: #0f172a;
+  --brand-text: #0f172a;
+  --bg: #ffffff;
+  --bg-alt: #f5f8ff;
+  --muted: #475569;
+  --border: #e2e8f0;
+  --focus: #1d4ed8;
+}
+
+[data-theme="dark"] {
+  --bg: #0b1220;
+  --bg-alt: #0f172a;
+  --brand-text: #e2e8f0;
+  --muted: #94a3b8;
+  --border: #1f2937;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--brand-text);
+}
+
+a {
+  color: var(--brand-blue);
+}
+
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}

@@ -1,82 +1,37 @@
-# Lightweight React Template for KAVIA
+# Music Company Web Platform (Frontend)
 
-This project provides a minimal React template with a clean, modern UI and minimal dependencies.
+A blue and white themed web platform built with React to showcase artists, albums, and company services. Includes contact and inquiry forms, a simple admin UI, and accessibility best practices.
 
 ## Features
 
-- **Lightweight**: No heavy UI frameworks - uses only vanilla CSS and React
-- **Modern UI**: Clean, responsive design with KAVIA brand styling
-- **Fast**: Minimal dependencies for quick loading times
-- **Simple**: Easy to understand and modify
+- Branding & hero section with clear CTAs
+- Responsive navigation and layout
+- Artist discovery (search, filter, sort) and detailed profiles
+- Album catalog and album detail pages with tracks and external links
+- Services overview with details and inquiry form
+- Contact form with validation, anti-spam honeypot, and privacy consent
+- Admin UI to manage artists, albums, and services (in-memory demo)
+- WCAG 2.1 AA accessibility considerations
+- Modular structure and documentation for easy updates
+- Extensible data store for future backend/CMS integration
 
-## Getting Started
+## Quick start
 
-In the project directory, you can run:
+- Install: `npm install`
+- Run: `npm start`
+- Build: `npm run build`
+- Test: `npm test`
 
-### `npm start`
+## Content updates
 
-Runs the app in development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Edit `src/store/data.js` to update artists, albums, and services.
+- Use `/admin` route for in-memory changes during sessions.
+- See `CONTENT_GUIDE.md` for details.
 
-### `npm test`
+## Accessibility
 
-Launches the test runner in interactive watch mode.
+- See `ACCESSIBILITY.md` for guidance and verification steps.
 
-### `npm run build`
+## Developer notes
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-## Customization
-
-### Colors
-
-The main brand colors are defined as CSS variables in `src/App.css`:
-
-```css
-:root {
-  --kavia-orange: #E87A41;
-  --kavia-dark: #1A1A1A;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
-}
-```
-
-### Components
-
-This template uses pure HTML/CSS components instead of a UI framework. You can find component styles in `src/App.css`. 
-
-Common components include:
-- Buttons (`.btn`, `.btn-large`)
-- Container (`.container`)
-- Navigation (`.navbar`)
-- Typography (`.title`, `.subtitle`, `.description`)
-
-## Learn More
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- See `DEVELOPER_NOTES.md` for architecture, theming, and extensibility.
